@@ -115,17 +115,17 @@ public class NewBillCustomerActivity extends AppCompatActivity {
         int year = calendar.get(Calendar.YEAR);
         int month = calendar.get(Calendar.MONTH);
         int day = calendar.get(Calendar.DAY_OF_MONTH);
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
+        /*int hour = calendar.get(Calendar.HOUR_OF_DAY);
         int min = calendar.get(Calendar.MINUTE);
-        int sec = calendar.get(Calendar.SECOND);
+        int sec = calendar.get(Calendar.SECOND);*/
         year = 2020 - year + 65;
         String syear = Character.toString((char) year);
         month = month + 65;
         String smonth = Character.toString((char) month);
-        hour = hour + 65;
-        String shour = Character.toString((char) hour);
+        //hour = hour + 65;
+        //String shour = Character.toString((char) hour);
 
-        billNumber = syear + min + smonth + shour  + day  + sec;
+        billNumber = syear  + smonth   + day  ;
         return billNumber;
     }
 

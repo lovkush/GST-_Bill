@@ -134,6 +134,7 @@ public class SavePDFActivity extends AppCompatActivity {
         authorisedSignatoryTv.setText(authorisedSignatory);
         businessContactTv.setText(prefs.getString(SetupPasswordActivity.SETUP_BUSINESS_CONTACT_KEY, ""));
 
+        invoiceNumber = invoiceNumber + billId;
         customerNameTv.setText(customerName);
         customerContactTv.setText(customerContact);
         gstNumberTv.setText(gstNumber);
@@ -249,28 +250,5 @@ public class SavePDFActivity extends AppCompatActivity {
         }, 1000);
 
     }
-
-    public static String billNumberGenerator(){
-        String billNumber = null;
-
-        Calendar calendar = Calendar.getInstance(TimeZone.getDefault());
-
-        int year = calendar.get(Calendar.YEAR);
-        int month = calendar.get(Calendar.MONTH);
-        int day = calendar.get(Calendar.DAY_OF_MONTH);
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int min = calendar.get(Calendar.MINUTE);
-        int sec = calendar.get(Calendar.SECOND);
-        year = 2020 - year + 65;
-        String syear = Character.toString((char) year);
-        month = month + 65;
-        String smonth = Character.toString((char) month);
-        hour = hour + 65;
-        String shour = Character.toString((char) hour);
-
-        billNumber = syear + min + smonth + sec + shour  + day  ;
-        return billNumber;
-    }
-
 
 }

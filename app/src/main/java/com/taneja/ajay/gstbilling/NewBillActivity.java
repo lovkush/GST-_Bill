@@ -203,7 +203,7 @@ public class NewBillActivity extends AppCompatActivity {
             String phoneNumber = intent.getStringExtra(NewBillCustomerActivity.ADD_CUSTOMER_PHONE_KEY);
             String billDate = new SimpleDateFormat("dd-MM-yyyy").format(new Date());
             String billStatus = GSTBillingContract.BILL_STATUS_UNPAID;
-            String invoiceNo = intent.getStringExtra(NewBillCustomerActivity.ADD_CUSTOMER_INVOICENO_KEY);
+            String invoiceNo = intent.getStringExtra(NewBillCustomerActivity.ADD_CUSTOMER_INVOICENO_KEY) ;
 
             ContentValues contentValues = new ContentValues();
             contentValues.put(GSTBillingEntry.PRIMARY_COLUMN_NAME, customerName);
