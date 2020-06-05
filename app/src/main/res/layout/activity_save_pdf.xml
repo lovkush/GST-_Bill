@@ -197,7 +197,7 @@
                         android:layout_height="wrap_content">
                         <TextView
                             android:fontFamily="serif"
-                            android:text="GSTIN"
+                            android:text="GST/Unique ID"
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimaryText"
                             android:textSize="4mm"
@@ -279,7 +279,7 @@
                         android:layout_height="wrap_content">
                         <TextView
                             android:fontFamily="serif"
-                            android:text="@string/unique_id"
+                            android:text="E-way Bill NO."
                             android:textStyle="bold"
                             android:textColor="@color/colorPrimaryText"
                             android:textSize="4mm"
@@ -355,7 +355,7 @@
                     android:gravity="left"
                     android:text="@string/item_label"
                     android:layout_width="0mm"
-                    android:layout_weight="6.5"
+                    android:layout_weight="5"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:fontFamily="serif"
@@ -384,7 +384,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="3.5"
+                    android:layout_weight="3"
                     android:textStyle="bold"
                     android:gravity="center"
                     android:textSize="4mm"
@@ -418,7 +418,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="2"
                     android:textStyle="bold"
                     android:paddingRight="2mm"
                     android:textSize="4mm"
@@ -429,7 +429,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="3.5"
                     android:textStyle="bold"
                     android:paddingRight="2mm"
                     android:textSize="4mm"
@@ -440,7 +440,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="3.5"
                     android:textStyle="bold"
                     android:paddingRight="2mm"
                     android:gravity="right"
@@ -480,7 +480,7 @@
                     android:gravity="left"
                     android:text="@string/total_label"
                     android:layout_width="0mm"
-                    android:layout_weight="7"
+                    android:layout_weight="5"
                     android:layout_height="wrap_content" />
                 <TextView
                     android:fontFamily="serif"
@@ -501,7 +501,7 @@
                     android:fontFamily="serif"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="4"/>
+                    android:layout_weight="3"/>
                 <TextView
                     android:fontFamily="serif"
                     android:textColor="@color/colorPrimaryText"
@@ -521,10 +521,10 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="2"
                     android:textSize="4mm"
                     android:text="0"
-                    android:gravity="right"
+                    android:gravity="center"
                     android:id="@+id/pdf_total_igst"/>
 
                 <TextView
@@ -532,7 +532,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="3.5"
                     android:textSize="4mm"
                     android:gravity="right"
                     android:id="@+id/pdf_total_cgst"/>
@@ -541,7 +541,7 @@
                     android:textColor="@color/colorPrimaryText"
                     android:layout_width="0mm"
                     android:layout_height="wrap_content"
-                    android:layout_weight="2.5"
+                    android:layout_weight="3.5"
                     android:gravity="right"
                     android:textSize="4mm"
                     android:id="@+id/pdf_total_sgst"/>

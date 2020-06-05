@@ -218,6 +218,7 @@ public class DetailActivity extends AppCompatActivity implements LoaderManager.L
             Intent pdfIntent = new Intent(this, SavePDFActivity.class);
             pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_NAME, customerName);
             pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_MOT, mot);
+            pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_PHONE_NUMBER, phoneNumber);
             pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_INVOICENO,invoiceNumber);
             pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_VEHNO, vehNumber);
             pdfIntent.putExtra(GSTBillingContract.GSTBillingEntry.PRIMARY_COLUMN_UNQID, uniqueId);

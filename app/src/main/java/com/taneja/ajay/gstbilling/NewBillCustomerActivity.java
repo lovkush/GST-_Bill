@@ -68,12 +68,12 @@ public class NewBillCustomerActivity extends AppCompatActivity {
             phoneNumber = "NA";
         }
 
-        if(gstNumber.length() > 0 && gstNumber.length() < 15){
+       /* if(gstNumber.length() > 0 && gstNumber.length() < 15){
             Toast.makeText(this, getString(R.string.invalid_phone_number_error), Toast.LENGTH_SHORT).show();
             return;
         }else if(gstNumber.length() == 0){
             gstNumber = "NA";
-        }
+        } */
 
 
 
